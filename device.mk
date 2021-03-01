@@ -11,7 +11,7 @@ $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 TARGET_FACE_UNLOCK_SUPPORT := YES
 PRODUCT_BOARD_PLATFORM := sm8250
 TARGET_SUPPORTS_BLUR := true
-BUILD_TYPE := Official
+BUILD_TYPE := Unoffical
 
 # Keylayout
 PRODUCT_COPY_FILES += \
