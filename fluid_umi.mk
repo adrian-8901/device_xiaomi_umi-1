@@ -10,6 +10,10 @@ $(call inherit-product, device/xiaomi/umi/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 
+# Inherit gapps
+$(call inherit-product-if-exists, vendor/gms/gms_full.mk)
+$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := fluid_umi
 PRODUCT_DEVICE := umi
