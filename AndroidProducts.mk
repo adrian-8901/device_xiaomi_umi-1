@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/descendant_umi.mk
+    $(LOCAL_DIR)/fluid_umi.mk
 
 COMMON_LUNCH_CHOICES := \
-    descendant_umi-user \
-    descendant_umi-userdebug \
-    descendant_umi-eng
+    fluid_umi-user \
+    fluid_umi-userdebug \
+    fluid_umi-eng
