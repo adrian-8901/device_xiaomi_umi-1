@@ -8,10 +8,11 @@
 $(call inherit-product, device/xiaomi/umi/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+$(call inherit-product-if-exists, vendor/gapps/config.mk)
+$(call inherit-product-if-exists, vendor/gms/gms_full.mk)
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_umi
+PRODUCT_NAME := rr_umi
 PRODUCT_DEVICE := umi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
